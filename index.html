@@ -243,7 +243,7 @@
         }
 
         async function fetchAllowedEmails() {
-            const response = await fetch('https://script.google.com/macros/s/AKfycbyXpyYfr2N5pRyGqFUGgm05_UL7eattZoUObK2KZ6pX-MBFXa32jF8hUFJ4JkWOCDUE/exec?action=getSheetData');
+            const response = await fetch('https://script.google.com/macros/s/AKfycbx-5BEKmTi3HRps12YcasMzVHjlU39sATHluZOOIiRtKeCLQAbTBNPA69IIXWloU20/exec?action=getSheetData');
             const data = await response.json();
             console.log(data); // Thêm dòng này để kiểm tra dữ liệu
             return data.map(item => item.email.trim().toLowerCase()); // Chuyển tất cả email thành chữ thường và loại bỏ khoảng trắng
